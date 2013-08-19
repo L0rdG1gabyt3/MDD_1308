@@ -45,6 +45,39 @@ LOCK TABLES `locations` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `userId` int(11) NOT NULL AUTO_INCREMENT,
+  `userName` varchar(45) NOT NULL,
+  `firstName` varchar(45) NOT NULL,
+  `lastName` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `homeZipcode` int(11) NOT NULL,
+  `userPassword` varchar(45) NOT NULL,
+  `userSalt` varchar(45) NOT NULL,
+  PRIMARY KEY (`userId`),
+  UNIQUE KEY `email_UNIQUE` (`email`),
+  UNIQUE KEY `UX_name` (`userName`),
+  UNIQUE KEY `UX_name_password` (`userName`,`userPassword`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COMMENT='DB to contain the user information';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'jklug2001','Josh','Klug','jklug2001@fullsail.edu',46815,'5f4dcc3b5aa765d61d8327deb882cf99','');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `zipcodes`
 --
 
@@ -82,4 +115,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-08-13 14:24:23
+-- Dump completed on 2013-08-19 13:34:30
