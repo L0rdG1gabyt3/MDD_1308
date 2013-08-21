@@ -14,7 +14,7 @@ class userView {
         include "showLocation.inc";
     }
 
-    public function showCoasterDetails($rows) {
+    public function showLocationDetails($rows) {
         include "showLocationDetails.inc";
     }
 }

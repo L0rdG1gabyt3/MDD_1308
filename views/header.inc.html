@@ -2,10 +2,11 @@
 <html>
 <head>
     <title>InterestPoint</title>
-   <link rel="stylesheet" type="text/css" href="css/foundation.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/foundation.css" media="screen" />
 </head>
 <body>
-<div><img src="img/logo2.png" /></div>
+<img src="../img/logo2.png"/>
+
 
 <?php
 require_once "db.php";
@@ -16,8 +17,9 @@ require_once "authView.php";
 
 if (isset($_SESSION['userInfo'])){
     echo '<a href="logout.php">Log Out</a></p>';
-}
+} //else{
+  //  echo '<p class="loginText">Welcome! Please <a class="login" href="index2.php">Login</a><br /><br />', '<a class ="homeText" href="index2.php">Home</a></p>';
+//}
 ?>
-
 </body>
 </html>

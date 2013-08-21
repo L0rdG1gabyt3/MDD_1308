@@ -14,10 +14,10 @@ class userModel {
 
     public function getLocation(){
         $statement = $this->db->prepare("
-		SELECT coasterId, coasterName
-		FROM rollercoaster
-		WHERE (coasterName IS NOT NULL)
-		ORDER BY coasterName
+		SELECT homeZipcode
+		FROM users
+		WHERE (homeZipcode IS NOT NULL)
+		-- ORDER BY coasterName
 		");
         try{
             if ($statement->execute()){
@@ -30,16 +30,17 @@ class userModel {
             var_dump($e);
         }
         return array();
+        echo array();
     }
 
     public function getLocationDetails($id){
         $statement = $this->db->prepare("
-		SELECT coasterId, coasterName, coasterType, height, maxSpeed, trackLength
-		FROM rollercoaster
-		WHERE coasterId = :c_Id
+		SELECT zipcode, state, city, latitude, longitude
+		FROM zipcodes
+		WHERE zipcode = :z_Id
 		");
         try{
-            if($statement->execute(array(":c_Id"=>$id))){
+            if($statement->execute(array(":z_Id"=>$id))){
                 $rows = $statement->fetchALL(\PDO::FETCH_ASSOC);
                 return $rows;
             }

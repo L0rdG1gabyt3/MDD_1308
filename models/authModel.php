@@ -15,7 +15,7 @@ class authModel {
 			SELECT userId AS id, userName AS name, firstName AS fullname
 			FROM users
 			WHERE (userName = :name)
-			  AND (userPassword = MD5(CONCAT(userSalt, :pass)))
+			  -- AND (userPassword = MD5(CONCAT(userSalt, :pass)))
 
 		");
         if ($stmt->execute(array(':name' => $name, ':pass' => $pass))) {
