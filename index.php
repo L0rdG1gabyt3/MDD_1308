@@ -12,8 +12,7 @@ $password = empty($_POST['password']) ? '' : trim($_POST['password']);
 
 $contentPage = 'form';
 $user = NULL;
-
-session_start();
+sec_session_start();
 
 if (!empty($_SESSION['userInfo'])){
     $contentPage = 'success';

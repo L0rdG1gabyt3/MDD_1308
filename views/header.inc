@@ -2,22 +2,18 @@
 <html>
 <head>
     <title>InterestPoint</title>
-   <link rel="stylesheet" type="text/css" href="css/foundation.css" media="screen" />
+    <link rel="stylesheet" href="css/foundation.css">
 </head>
 <body>
-<div><img src="img/logo2.png" /></div>
 
 <?php
 require_once "db.php";
 require_once "models/authModel.php";
-require_once "authView.php";
-
-//session_start();
+require_once "views/authView.php";
 
 if (isset($_SESSION['userInfo'])){
-    echo '<a href="logout.php">Log Out</a></p>';
+    echo '<ul><li><a href="home.php" class="small button">Stuff to See</a></li>', '<li><a href="logout.php" class="small button">Logout</a></li></ul>';
 }
 ?>
-
 </body>
 </html>

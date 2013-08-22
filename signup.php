@@ -2,8 +2,7 @@
 
 require_once('db.php');
 require_once('views/authView.php');
-
-session_start();
+require_once('models/authModel.php');
 
 $view = new AuthView();
 $view->show('header');
@@ -13,14 +12,14 @@ $fields = array(
     'firstName'=>'First Name',
     'lastName'=>'Last Name',
     'email'=>'Email',
-    'homeZipcode'=>'Home Zip Code',
+    'homeZipcode'=>'Zip Code',
 );
 
 if(isset($_POST['submit'])){
 
     $values = array();
-    $userPassword1 = $_POST["userPassword1"];
-    $userPassword2 = $_POST["userPassword2"];
+    $userPassword1 = MD5($_POST["userSalt, userPassword1"]);
+    $userPassword2 = MD5($_POST["userSalt, userPassword2"]);
 
     if($userPassword1 == '' || $userPassword2 == ''){
         echo "You forgot to enter a password.";
@@ -47,9 +46,7 @@ if(isset($_POST['submit'])){
         if(!count($errors)){
             $sql = "INSERT INTO users(userName, firstName, lastName, email, homeZipcode)
                 VALUES (?, ?, ?, ?, ?);
-              INSERT INTO users(userPassword)
-                VALUE($userPassword1);
-              UPDATE users SET userPassword = MD5(CONCAT(userSalt,userPassword1))";
+           UPDATE users SET userPassword = MD5(CONCAT('userSalt','userPassword'))";
 
             $stmt = $db->prepare($sql);
 
@@ -96,9 +93,5 @@ if(isset($result)){
     <input name="userPassword1" type="password"></p>
     <p> <label for="userPassword2">Re-Type your password</label>
     <input name="userPassword2" type="password"></p>
-    <input class="button" type="submit" name="submit" value="Sign Up!" />
+    <input class="button success"type="submit" name="submit" value="Sign Up!" />
 </form>
-
-
-
-

@@ -1,8 +1,11 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: Josh
- * Date: 8/21/13
- * Time: 6:52 PM
- * To change this template use File | Settings | File Templates.
- */
+
+require_once "../models/authModel.php";
+require_once "authView.php";
+
+date_default_timezone_set('America/New_York');
+echo "Hello World! It's", date("g:i A"), " on ", date("F j Y");
+
+echo ($data['id']);
+?>
+

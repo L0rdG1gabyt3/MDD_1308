@@ -58,13 +58,13 @@ CREATE TABLE `users` (
   `lastName` varchar(45) NOT NULL,
   `email` varchar(45) NOT NULL,
   `homeZipcode` int(11) NOT NULL,
-  `userPassword` varchar(45) NOT NULL,
-  `userSalt` varchar(45) NOT NULL,
+  `userPassword` varchar(60) NOT NULL,
+  `userSalt` varchar(45) NOT NULL DEFAULT '5d2c6f2g',
   PRIMARY KEY (`userId`),
   UNIQUE KEY `email_UNIQUE` (`email`),
   UNIQUE KEY `UX_name` (`userName`),
   UNIQUE KEY `UX_name_password` (`userName`,`userPassword`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COMMENT='DB to contain the user information';
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=latin1 COMMENT='DB to contain the user information';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -73,7 +73,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'jklug2001','Josh','Klug','jklug2001@fullsail.edu',46815,'5f4dcc3b5aa765d61d8327deb882cf99','');
+INSERT INTO `users` VALUES (61,'jklug','Josh','Klug','email@email.com',12345,'a3941a0177744c2d92766dae0110b27b','5d2c6f2g'),(64,'jklug1','Josh','Klug','jkl@email.com',46825,'a3941a0177744c2d92766dae0110b27b','5d2c6f2g'),(65,'ria9104','maria','Klug','123@email.com',46825,'a3941a0177744c2d92766dae0110b27b','5d2c6f2g'),(67,'jklug10','Josh','KLug','klug@email.com',88888,'a3941a0177744c2d92766dae0110b27b','5d2c6f2g'),(68,'dsmith','Dan','Smith','smith@email.com',46742,'a3941a0177744c2d92766dae0110b27b','5d2c6f2g'),(69,'tjones','Tom','Jones','tjones@email.com',85214,'a3941a0177744c2d92766dae0110b27b','5d2c6f2g'),(70,'bhawley','Bryan','H','bhaw@email.com',12541,'a3941a0177744c2d92766dae0110b27b','5d2c6f2g');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -115,4 +115,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-08-19 13:34:30
+-- Dump completed on 2013-08-21 23:02:01

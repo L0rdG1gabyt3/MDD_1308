@@ -1,8 +1,9 @@
 <?php
-echo "<h2>Your Home Location</h2>";
-foreach ($rows as $num => $row){
-    $c_id = $row['userId'];
-    echo "</br><h3><a href='coasterInfo.php?id=" . mysql_real_escape_string($c_id) . "'>${row['homeZipcode']}</a></h2>";
 
-}
+require_once "models/authModel.php";
+require_once "authView.php";
+
+date_default_timezone_set('America/New_York');
+echo "Hello World! It's", date("g:i A"), " on ", date("F j Y");
+echo ($data['id']);
 ?>

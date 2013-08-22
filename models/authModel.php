@@ -12,10 +12,10 @@ class authModel {
         mysql_real_escape_string($pass);
 
         $stmt = $this->db->prepare("
-			SELECT userId AS id, userName AS name, firstName AS fullname
+			SELECT userId AS id, userName AS name, firstName AS fullname, homeZipcode AS zipcode
 			FROM users
 			WHERE (userName = :name)
-			  -- AND (userPassword = MD5(CONCAT(userSalt, :pass)))
+			   -- AND (userPassword = MD5(CONCAT(userSalt, :pass)));
 
 		");
         if ($stmt->execute(array(':name' => $name, ':pass' => $pass))) {

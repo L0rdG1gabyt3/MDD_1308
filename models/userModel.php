@@ -12,12 +12,11 @@ class userModel {
         }
     }
 
-    public function getLocation(){
+    public function getInfo(){
         $statement = $this->db->prepare("
-		SELECT homeZipcode
+		SELECT userId, homeZipcode
 		FROM users
 		WHERE (homeZipcode IS NOT NULL)
-		-- ORDER BY coasterName
 		");
         try{
             if ($statement->execute()){
@@ -30,7 +29,6 @@ class userModel {
             var_dump($e);
         }
         return array();
-        echo array();
     }
 
     public function getLocationDetails($id){

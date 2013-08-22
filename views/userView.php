@@ -17,4 +17,11 @@ class userView {
     public function showLocationDetails($rows) {
         include "showLocationDetails.inc";
     }
+
+    public function show($template, $data = array()) {
+        $templatePath = "views/${template}.inc";
+        if (file_exists($templatePath)) {
+            include $templatePath;
+        }
+    }
 }
