@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/foundation.css">
 </head>
 <body>
-    <h3>Thanks for Registering with InterestPoint. You will be redirected to the Log-in page in 10 seconds.</h3>
-    <p>Or, you can click <a href="index.php">here</a> to go sign-in manually.</p>
+<h3>Thanks for Registering with InterestPoint. You will be redirected to the Log-in page in 10 seconds.</h3>
+<p>Or, you can click <a href="index.php">here</a> to go sign-in manually.</p>
 </body>
 </html>

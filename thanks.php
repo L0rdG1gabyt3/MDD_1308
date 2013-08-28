@@ -15,7 +15,7 @@ sec_session_start();
 
 $user = NULL;
 
-$contentPage = 'showLocation';
+$contentPage = 'thanks';
 
 
 $view->show('header', '');

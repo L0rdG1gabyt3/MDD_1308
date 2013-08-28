@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
@@ -66,7 +68,7 @@
             var lng = data['coords']['longitude'];
             /* Create map. */
             var map = new L.Map('map_canvas')
-                .setView(new L.LatLng(lat, lng), 15);
+                    .setView(new L.LatLng(lat, lng), 15);
             /**
              * This is a sample map url that you need to change.
              * Sign up at http://mapbox.com/foursquare for a custom map url.
@@ -77,14 +79,14 @@
             });
 
             /* Query foursquare API for venue recommendations near the current location. */
-            $.getJSON(config.apiUrl + 'v2/venues/explore?ll=' + lat + ',' + lng + 'client_id=' + config.clientId +'client_secret='+ config.clientSecret, {}, function(data) {
+            $.getJSON('https://api.foursquare.com/v2/venues/explore?ll=41.079273%2C%20-85.13935099999999&section=food&novelty=new&client_id=UO1ZGLZHYIEUOI5XO0QD0XV5RBXGDKB4XPTN2IOQNIFHBRJJ&client_secret=V4AJ1OFWM5U3SK1DZ1J0TD1FQYZDL3CKPRDLLWGR1ETWTH0U', function(data) {
                 venues = data['response']['groups'][0]['items'];
                 /* Place marker for each venue. */
                 for (var i = 0; i < venues.length; i++) {
                     /* Get marker's location */
                     var latLng = new L.LatLng(
-                        venues[i]['venue']['location']['lat'],
-                        venues[i]['venue']['location']['lng']
+                            venues[i]['venue']['location']['lat'],
+                            venues[i]['venue']['location']['lng']
                     );
                     /* Build icon for each icon */
                     var leafletIcon = L.Icon.extend({
@@ -96,9 +98,9 @@
                     });
                     var icon = new leafletIcon();
                     var marker = new L.Marker(latLng, {icon: icon})
-                        .bindPopup(venues[i]['venue']['name'], { closeButton: false })
-                        .on('mouseover', function(e) { this.openPopup(); })
-                        .on('mouseout', function(e) { this.closePopup(); });
+                            .bindPopup(venues[i]['venue']['name'], { closeButton: false })
+                            .on('mouseover', function(e) { this.openPopup(); })
+                            .on('mouseout', function(e) { this.closePopup(); });
                     map.addLayer(marker);
                 }
             })

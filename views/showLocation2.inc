@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-    <title>Hotspots | InterestPoint</title>
+    <title>foursquare :: Explore Sample</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" id="jquery"></script>
 
     <link href="css/leaflet.css" type="text/css" rel="stylesheet" />
@@ -32,9 +32,6 @@
 
     <script type="text/javascript">
         var config = {
-            clientId: 'UO1ZGLZHYIEUOI5XO0QD0XV5RBXGDKB4XPTN2IOQNIFHBRJJ',
-            clientSecret: 'V4AJ1OFWM5U3SK1DZ1J0TD1FQYZDL3CKPRDLLWGR1ETWTH0U',
-            clientInfo: 'client_id=UO1ZGLZHYIEUOI5XO0QD0XV5RBXGDKB4XPTN2IOQNIFHBRJJ&client_secret=V4AJ1OFWM5U3SK1DZ1J0TD1FQYZDL3CKPRDLLWGR1ETWTH0U',
             apiKey: 'UO1ZGLZHYIEUOI5XO0QD0XV5RBXGDKB4XPTN2IOQNIFHBRJJ',
             authUrl: 'https://foursquare.com/',
             apiUrl: 'https://api.foursquare.com/'
@@ -42,23 +39,23 @@
 
         //<![CDATA[
 
-        /* Attempt to retrieve access token from URL.
-         function doAuthRedirect() {
-         var redirect = window.location.href.replace(window.location.hash, '');
-         var url = config.authUrl + 'oauth2/authenticate?response_type=token&client_id=' + config.apiKey +
-         '&redirect_uri=' + encodeURIComponent(redirect) +
-         '&state=' + encodeURIComponent($.bbq.getState('req') || 'users/self');
-         window.location.href = url;
-         };
+        /* Attempt to retrieve access token from URL. */
+        function doAuthRedirect() {
+            var redirect = window.location.href.replace(window.location.hash, '');
+            var url = config.authUrl + 'oauth2/authenticate?response_type=token&client_id=' + config.apiKey +
+                '&redirect_uri=' + encodeURIComponent(redirect) +
+                '&state=' + encodeURIComponent($.bbq.getState('req') || 'users/self');
+            window.location.href = url;
+        };
 
-         if ($.bbq.getState('access_token')) {
-         // If there is a token in the state, consume it
-         var token = $.bbq.getState('access_token');
-         $.bbq.pushState({}, 2)
-         } else if ($.bbq.getState('error')) {
-         } else {
-         doAuthRedirect();
-         }*/
+        if ($.bbq.getState('access_token')) {
+// If there is a token in the state, consume it
+            var token = $.bbq.getState('access_token');
+            $.bbq.pushState({}, 2)
+        } else if ($.bbq.getState('error')) {
+        } else {
+            doAuthRedirect();
+        }
 
         /* HTML 5 geolocation. */
         navigator.geolocation.getCurrentPosition(function(data) {
@@ -71,13 +68,13 @@
              * This is a sample map url that you need to change.
              * Sign up at http://mapbox.com/foursquare for a custom map url.
              */
-            var mapboxUrl = 'http://a.tiles.mapbox.com/v3/jklug2001.map-z881b8ix.jsonp';
+            var mapboxUrl = 'http://a.tiles.mapbox.com/v3/moraramis.map-4omzrk2j/page.html';
             wax.tilejson(mapboxUrl, function(tilejson) {
                 map.addLayer(new wax.leaf.connector(tilejson));
             });
 
             /* Query foursquare API for venue recommendations near the current location. */
-            $.getJSON(config.apiUrl + 'v2/venues/explore?ll=' + lat + ',' + lng + 'client_id=' + config.clientId +'client_secret='+ config.clientSecret, {}, function(data) {
+            $.getJSON(config.apiUrl + 'v2/venues/explore?ll=' + lat + ',' + lng + '&oauth_token=' + window.token, {}, function(data) {
                 venues = data['response']['groups'][0]['items'];
                 /* Place marker for each venue. */
                 for (var i = 0; i < venues.length; i++) {
@@ -108,6 +105,6 @@
 
 </head>
 <body>
-<div style="width: 50%; height: 50%;" id="map_canvas"></div>
+<div style="width: 100%; height: 100%;" id="map_canvas"></div>
 </body>
-</html>
+</html> 

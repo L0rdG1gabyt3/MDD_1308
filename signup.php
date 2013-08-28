@@ -60,7 +60,7 @@ if(isset($_POST['submit'])){
 //If the form was submitted and an insert was attempted, display a message.
 if(isset($result)){
     if($result){
-        header ("Location: thanks.html");
+        header ("Location: thanks.php");
         exit;
         // echo '<b>Thanks for Signing up  with InterestPoint!</b>';
     }else{
