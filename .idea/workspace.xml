@@ -41,19 +41,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="showReport.inc" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/showReport.inc">
+      <file leaf-file-name="report.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/report.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="870" selection-end="870" vertical-scroll-proportion="-25.0">
+            <state line="6" column="10" selection-start="151" selection-end="151" vertical-scroll-proportion="-4.4117646">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="report.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/report.php">
+      <file leaf-file-name="form_process.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form_process.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="10" selection-start="151" selection-end="151" vertical-scroll-proportion="-2.9411764">
+            <state line="23" column="29" selection-start="890" selection-end="890" vertical-scroll-proportion="-16.911764">
               <folding />
             </state>
           </provider>
@@ -62,16 +62,34 @@
       <file leaf-file-name="thankyou.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thankyou.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="-12.5">
+            <state line="17" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.inc" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="form.inc" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/form.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="534" selection-end="534" vertical-scroll-proportion="0.49443758">
+            <state line="16" column="13" selection-start="534" selection-end="534" vertical-scroll-proportion="-11.764706">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thanks.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thanks.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thanks.inc" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/thanks.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -80,7 +98,7 @@
       <file leaf-file-name="header.inc" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/header.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1377669656160" expanded="true" signature="370:582" placeholder="..." />
                 <marker date="1377669656160" expanded="true" signature="387:565" placeholder="..." />
@@ -107,10 +125,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="showLocation.inc" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="showLocation.inc" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/showLocation.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="53" selection-start="4172" selection-end="4172" vertical-scroll-proportion="-10.294118">
+            <state line="68" column="45" selection-start="2927" selection-end="2927" vertical-scroll-proportion="-0.5703518">
               <folding />
             </state>
           </provider>
@@ -126,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/views/showReport.inc" />
         <option value="$PROJECT_DIR$/thanks2.php" />
         <option value="$PROJECT_DIR$/views/thanks2.inc" />
         <option value="$PROJECT_DIR$/views/header.inc" />
@@ -142,6 +159,7 @@
         <option value="$PROJECT_DIR$/views/showLocation.inc" />
         <option value="$PROJECT_DIR$/css/foundation.css" />
         <option value="$PROJECT_DIR$/views/form.inc" />
+        <option value="$PROJECT_DIR$/form_process.php" />
       </list>
     </option>
   </component>
@@ -200,6 +218,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MDD_1308" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MDD_1308" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -242,14 +288,14 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -271,7 +317,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15299878" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15483476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -347,71 +393,29 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/footer.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="26" selection-start="35" selection-end="35" vertical-scroll-proportion="-1.4705882">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/thankyou.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="102" selection-start="467" selection-end="467" vertical-scroll-proportion="-8.088235">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/apisamples.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/foundation.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/wax.leaf.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/leaflet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/form_process.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="891" selection-end="891" vertical-scroll-proportion="0.6909765">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/showReport.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="870" selection-end="870" vertical-scroll-proportion="-25.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/showLocation.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="53" selection-start="4172" selection-end="4172" vertical-scroll-proportion="-10.294118">
+        <state line="34" column="0" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -433,6 +437,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.06281407" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thankyou.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/signup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="7" selection-start="3281" selection-end="3281" vertical-scroll-proportion="-18.264706">
@@ -440,30 +456,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
+    <entry file="file://$PROJECT_DIR$/views/form.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.06281407">
+        <state line="16" column="13" selection-start="534" selection-end="534" vertical-scroll-proportion="-11.764706">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thanks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/thanks.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="151" selection-end="151" vertical-scroll-proportion="-2.9411764">
+        <state line="6" column="10" selection-start="151" selection-end="151" vertical-scroll-proportion="-4.4117646">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thankyou.php">
+    <entry file="file://$PROJECT_DIR$/form_process.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="362" selection-end="362" vertical-scroll-proportion="-12.5">
+        <state line="23" column="29" selection-start="890" selection-end="890" vertical-scroll-proportion="-16.911764">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/form.inc">
+    <entry file="file://$PROJECT_DIR$/views/showLocation.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="534" selection-end="534" vertical-scroll-proportion="0.49443758">
+        <state line="68" column="45" selection-start="2927" selection-end="2927" vertical-scroll-proportion="-0.5703518">
           <folding />
         </state>
       </provider>

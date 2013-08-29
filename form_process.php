@@ -20,8 +20,8 @@
             "\nDetails: $details" .
             "\n";
 
-    //mail("jklug2001@fullsail.edu", "InterestPoint Contact Form", $message_proper, "From: $username");
-    header("Location:thanks2.php");
+    mail("jklug2001@fullsail.edu", "InterestPoint Contact Form", $message_proper, "From: $username");
+    header("Location:thankyou.php");
     exit;
 ?>
 
