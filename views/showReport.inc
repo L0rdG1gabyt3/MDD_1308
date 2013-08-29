@@ -1,21 +1,34 @@
-<form action="submit.php" method="post" id='report_form'>
-    <p>Contact InterestPoint or report a Problem</p>
-    <label for="userName">Username</label>
-    <input name='userName' type='text' id='userName'  />
-    <label for="firstName">First Name</label>
-    <input name='firstName' type='text' id='firstName' />
-    <label for="lastName">Last Name</label>
-    <input name='lastName' type='text' id='lastName' />
-    <label for="email">Email</label>
-    <input name='email' type='email' id='email' /> <br />
-    <p>Select a reason for Contacting InterestPoint</p>
-    <select name='reason' required form='report_form'>
-        <option value='problem'>Problems with InterestPoint</option>
-        <option value='question'>Questions for InterestPoint</option>
-    </select><br />
-    <p>Put the details here.</p>
-    <textarea rows='50' cols='50' name='details'>
+<?php
 
-    </textarea>
-    <p><input type='button' name='submit' id='submit' value='Submit'></p>
-</form>
+if (isset($_REQUEST['email']))
+{
+$username = $_REQUEST['userName'];
+$firstname = $_REQUEST['firstName'];
+$lastname = $_REQUEST['lastName'];
+$email = $_REQUEST['email'];
+$reason = $_REQUEST['reason'];
+$details = $_REQUEST['details'];
+
+$message_proper =
+    "This message was sent from the InterestPoint Contact form.\n" .
+        "\n" .
+        "-----------------------Contact Details-----------------\n" .
+        "\nUser Name: $username" .
+        "\nFirst Name: $firstname" .
+        "\nLast Name: $lastname" .
+        "\nEmail Address: $email" .
+        "\n" .
+        "----------------Reason for Contact--------------------\n" .
+        "\nReason: $reason" .
+        "\nDetails: $details" .
+        "\n";
+
+mail("jklug2001@gmail.com", "InterestPoint Contact Form", $message_proper, "From: $username");
+header("Location:index.php");
+exit;
+}
+else{
+
+echo"";
+}
+?>

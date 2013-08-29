@@ -1,4 +1,4 @@
-<h1>InterestPoint - Login</h1>
+<h2>Login</h2>
 <p>Please Log in with your username and password below.</p>
 <form action ="?" method="POST">
     <label for="username">Username:</label><br />
