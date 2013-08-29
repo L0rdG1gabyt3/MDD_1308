@@ -54,6 +54,7 @@ if(isset($_POST['submit'])){
         }
     }
 }
+
 ?>
 
 <?php
@@ -93,5 +94,6 @@ if(isset($result)){
     <input name="userPassword1" type="password"></p>
     <p> <label for="userPassword2">Re-Type your password</label>
     <input name="userPassword2" type="password"></p>
+    <p>By Clicking <b>Sign Up!</b> You Agree to Our <a href="tos_page.php">Terms of Service</a></p>
     <input class="button success"type="submit" name="submit" value="Sign Up!" />
 </form>
