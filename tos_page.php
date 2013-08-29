@@ -44,7 +44,7 @@ this website and/or the Company&#39;s literature; and</p>
 <p><b>Cancellation Policy</b></p>
  
 <p>Minimum 24 hours notice of cancellation required. Notification for instanc
-e, in person, via email, mobile phone, text message‟ and/or fax, or any other means will be accepted subject to confirmation in writing. We reserve the right to 
+e, in person, via email, mobile phone, text message and/or fax, or any other means will be accepted subject to confirmation in writing. We reserve the right to 
 levy a £30 charge to cover any subsequent administrative expenses.   
 Termination of Agreements and Refunds Policy</p>
 
@@ -57,7 +57,7 @@ Termination of Agreements and Refunds Policy</p>
   
 <p><b>Log Files</b></p>
 
-<p>We use IP addresses to analyse trends, administer the site, track user‟s movement, and gather broad demographic information for aggregate use. IP addresses are not linked to personally identifiable information. Additionally, for systems administration, detecting usage patterns and troubleshooting purposes, our web servers automatically log standard access information including browser type, access times/open mail, URL requested, and referral URL. This information is not shared with third parties and is used only within this Company on a need-to-know basis. Any individually identifiable information related to this data will never be used in any way different to that stated above without your explicit permission.</p>
+<p>We use IP addresses to analyse trends, administer the site, track user&#39;s movement, and gather broad demographic information for aggregate use. IP addresses are not linked to personally identifiable information. Additionally, for systems administration, detecting usage patterns and troubleshooting purposes, our web servers automatically log standard access information including browser type, access times/open mail, URL requested, and referral URL. This information is not shared with third parties and is used only within this Company on a need-to-know basis. Any individually identifiable information related to this data will never be used in any way different to that stated above without your explicit permission.</p>
 
 <p><b>Cookies</b></p>
 
@@ -74,10 +74,10 @@ hich are linked to from this website. Opinions expressed or material appearing o
 
 <p><b>Copyright Notice</b></p>
   
-<p>Copyright and other relevant intellectual property rights exists on all text relating to the Company&quot;s services and the 
+<p>Copyright and other relevant intellectual property rights exists on all text relating to the Company&#39;s services and the 
 full content of this website.<br />
 
-This Company‟s logo is a registered trademark of this Company
+This Company&#39;s logo is a registered trademark of this Company
  in the United Kingdom and other countries. The brand names and specific services of this Company featured on this web site are trade marked</p>
 
 <p><b>Communication</b></p>
@@ -104,7 +104,7 @@ This Company‟s logo is a registered trademark of this Company
   
 <p><b>Notification of Changes</b></p>
  
-<p>The Company reserves the right to change these conditions from time to time as it sees fit and your continued use of the site will signify your acceptance of any adjustment to these terms. If there are any changes to our privacy policy, we will announce that these changes have been made on our home page and on other key pages on our site. If there are any changes in how we use our site customers‟ Personally Identifiable Information, notification by e-mail or postal mail will be made to those affected by this change. Any changes to our privacy policy will be posted on our web site 30 days prior to these changes taking place. You are therefore advised to re-read this statement on a regular basis</p>
+<p>The Company reserves the right to change these conditions from time to time as it sees fit and your continued use of the site will signify your acceptance of any adjustment to these terms. If there are any changes to our privacy policy, we will announce that these changes have been made on our home page and on other key pages on our site. If there are any changes in how we use our site customer&#39;s Personally Identifiable Information, notification by e-mail or postal mail will be made to those affected by this change. Any changes to our privacy policy will be posted on our web site 30 days prior to these changes taking place. You are therefore advised to re-read this statement on a regular basis</p>
 
 <p>These terms and conditions form part of the Agreement between the Client and ourselves. Your accessing of this website and/or undertaking of a booking or Agreement indicates your understanding, agreement to and acceptance, of the Disclaimer Notice and the full Terms and Conditions contained herein. Your statutory Consumer Rights are unaffected.</p>
 

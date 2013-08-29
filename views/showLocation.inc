@@ -10,6 +10,7 @@
     <![endif]-->
 
     <link href="css/apisamples.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/apisamples.js"></script>
 
     <script src="js/apisamples.js" type="text/javascript"></script>
     <script src="js/jquery.ba-bbq.js" type="text/javascript"></script>
@@ -77,7 +78,7 @@
             });
 
             /* Query foursquare API for venue recommendations near the current location. */
-            $.getJSON(config.apiUrl + 'v2/venues/explore?ll=' + lat + ',' + lng + 'client_id=' + config.clientId +'client_secret='+ config.clientSecret, {}, function(data) {
+            $.getJSON(config.apiUrl + 'v2/venues/explore?ll=' + lat + ',' + lng + '&client_id=' + config.clientId +'&client_secret='+ config.clientSecret, {}, function(data) {
                 venues = data['response']['groups'][0]['items'];
                 /* Place marker for each venue. */
                 for (var i = 0; i < venues.length; i++) {
@@ -103,7 +104,6 @@
                 }
             })
         })
-        //]]>
     </script>
 
 </head>
